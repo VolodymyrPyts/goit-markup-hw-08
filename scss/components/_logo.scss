@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  color: getColor("active");
+}
+.logo__black {
+  color: getColor("logoHeader");
+}
+.logo__white {
+  color: getColor("bgBasic");
+}
+
+.logo__header {
+  margin-right: 93px;
+}
+.logo__footer {
+  margin-bottom: 20px;
+}

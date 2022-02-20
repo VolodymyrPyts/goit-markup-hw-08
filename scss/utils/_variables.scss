@@ -1,0 +1,32 @@
+$colors: (
+  "firstText": #757575,
+  "secondaryText": #212121,
+  "active": #2196f3,
+  "bgBasic": #ffffff,
+  "bgBasicTransparent": rgba(255, 255, 255, 0.6),
+  "bgSecondary": #2f303a,
+  "logoHeader": #000000,
+  "buttonBasic": #f5f4fa,
+  "social": #afb1b8,
+  "border": #eeeeee,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$timeAnime: (
+  "anime": 250ms,
+);
+
+@function getAnime($key) {
+  @return map-get($timeAnime, $key);
+}
+
+$cubeAnime: (
+  "Cube": cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getCube($key) {
+  @return map-get($cubeAnime, $key);
+}

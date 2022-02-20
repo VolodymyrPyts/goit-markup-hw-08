@@ -1,0 +1,35 @@
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+}
+
+.socialNetworks__item {
+  width: 44px;
+  height: 44px;
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.socialNetworks__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: getColor("bgBasic");
+  border-radius: 50%;
+  fill: getColor("social");
+  transition: background-color getAnime("anime") getCube("Cube"),
+    fill getAnime("anime") getCube("Cube");
+
+  &:hover,
+  &:focus {
+    background-color: getColor("active");
+    fill: getColor("bgBasic");
+  }
+}
+.socialNetworks--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: getColor("bgBasic");
+}

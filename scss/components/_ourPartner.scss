@@ -1,0 +1,40 @@
+.ourPartner {
+  display: flex;
+}
+
+.ourPartner__item {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ourPartner__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  fill: getColor("social");
+  cursor: pointer;
+  border: 1px solid getColor("social");
+  border-radius: 4px;
+
+  transition: fill getAnime("anime") getCube("Cube"),
+    border-color getAnime("anime") getCube("Cube");
+
+  &:hover,
+  &:focus {
+    fill: getColor("active");
+    border-color: getColor("active");
+  }
+}
+
+.ourPartner__icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}

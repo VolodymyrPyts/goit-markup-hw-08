@@ -1,0 +1,45 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.ourWork {
+  display: flex;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.ourWork__list {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ourWork__box {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: getColor("buttonBasic");
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.ourWork__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: getColor("secondaryText");
+  font-size: 14px;
+}

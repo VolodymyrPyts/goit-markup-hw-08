@@ -1,0 +1,21 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__paddingTopNon {
+  padding-top: 0;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  color: getColor("secondaryText");
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.17;
+}
+.section__teamBg {
+  background-color: getColor("buttonBasic");
+}
