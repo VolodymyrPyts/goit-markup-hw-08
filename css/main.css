@@ -51,12 +51,23 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__paddingTopNon {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .section__paddingTopNon {
+    display: none;
+  }
 }
 
 .section__title {
@@ -290,26 +301,46 @@ img {
 }
 
 .ourWork {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  margin: -15px;
+}
+@media screen and (min-width: 768px) {
+  .ourWork {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourWork {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .ourWork__list {
-  margin-right: 30px;
+  margin: 15px;
 }
 .ourWork__list:last-child {
   margin-right: 0;
 }
+@media screen and (min-width: 768px) {
+  .ourWork__list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
 
 .ourWork__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 120px;
   margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
   background-color: #f5f4fa;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -318,6 +349,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ourWork__title {
@@ -327,6 +361,11 @@ img {
   text-transform: uppercase;
   color: #212121;
   font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+  .ourWork__title {
+    text-align: center;
+  }
 }
 
 .teamCard {
