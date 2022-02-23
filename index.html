@@ -119,19 +119,19 @@
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="topic">
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img src="images/img1.jpg" alt="Десктопные приложения" width="370" height="294"></a>
+                    <a href="" class="topic__link"><img srcset="./images/desktop.jpg 370w, ./images/desktop@2x.jpg 740w, ./images/desktop@3x.jpg 1100w"  src="./images/desktop.jpg" alt="Десктопные приложения" width="370" height="294" ></a>  <!---->
                     <div class="topic__card">
                         <p>Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img src="images/img2.jpg" alt="Мобильные приложения" width="370" height="294"> </a>
+                    <a href="" class="topic__link"><img srcset="./images/moby.jpg 370w, ./images/moby@2x.jpg 740w, ./images/moby@3x.jpg 1100w" src="./images/moby.jpg" alt="Мобильные приложения" width="370" height="294"> </a> <!---->
                     <div class="topic__card">
                         <p>Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img src="images/img3.jpg" alt="Дизайнерские решения" width="370" height="294"></a>
+                    <a href="" class="topic__link"><img  srcset="./images/desigen.jpg 370w, ./images/desigen@2x.jpg 740w, ./images/desigen@3x.jpg 1100w" src="./images/desigen.jpg" alt="Дизайнерские решения" width="370" height="294"></a>
                     <div class="topic__card">
                         <p>Дизайнерские решения</p>
                     </div>
@@ -139,12 +139,19 @@
             </ul>
             </div>
         </section>
-        <!-- <section class="section section__teamBg">--><!--Наша команда-->
-      <!-- <div class="container">
+        <section class="section section__teamBg"><!--Наша команда-->
+      <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="teamCard">
                 <li  class="teamCard__item teamCard--indent">
-                    <img src="images/card1.jpg" alt="Наш дизайнер продукта" width="270" height="260">
+                    <!-- <img srcset="./images/card_i_270.jpg 370w, ./images/card_i_270@2x.jpg 740w, ./images/card_i_270@3x.jpg 1100w" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw"alt="Наш дизайнер продукта" width="270" height="260"> -->
+                    <picture>
+                        <source srcset="./images/card_i_270.jpg 270w, ./images/card_i_270@2x.jpg 540w, ./images/card_i_270@3x.jpg 910w" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                        <source srcset="./images/card_i_270.jpg 370w, ./images/card_i_270@2x.jpg 740w, ./images/card_i_270@3x.jpg 1100w"
+                            media="(max-width: 1199px)" sizes="(min-width: 768px) 768px, 100vw">
+                            <!-- <source srcset="./images/card_i_270.jpg 370w, ./images/card_i_270@2x.jpg 740w, ./images/card_i_270@3x.jpg 1100w"
+                                 sizes="(min-width: 1120px) 480px, 100vw"> -->
+                    </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Игорь Демьяненко</h3>
                         <p class="teamCard__work">Product Designer</p>
@@ -317,8 +324,8 @@
             </div>
         </section>
 
-   <!-- </main> 
-    <footer class="footer ">--><!--Подвал сайта, наши контакты-->
+   </main> 
+    <!-- <footer class="footer ">--><!--Подвал сайта, наши контакты-->
         <!--<div class="container container__footer">
             <div class="footer__adres">
                     <a href="" class="logo logo__footer">Web<span class="logo__white">Studio</span></a>
