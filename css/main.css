@@ -414,6 +414,24 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .ourPartner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourPartner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .ourPartner__item {
   margin-right: 30px;
@@ -451,10 +469,6 @@ img {
 .ourPartner__icon {
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.topic__section {
-  padding-top: 0;
 }
 
 .topic {

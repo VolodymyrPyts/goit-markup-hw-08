@@ -1,5 +1,17 @@
 .ourPartner {
   display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    
+  flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    // flex-wrap: wrap;
+    
+  // flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .ourPartner__item {
@@ -32,6 +44,8 @@
     fill: getColor("active");
     border-color: getColor("active");
   }
+  
+
 }
 
 .ourPartner__icon {
