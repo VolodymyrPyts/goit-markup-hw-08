@@ -144,8 +144,25 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="teamCard">
                 <li  class="teamCard__item teamCard--indent">
-                    <img srcset="./images/card_i_270.jpg 370w, ./images/card_i_270@2x.jpg 740w, ./images/card_i_270@3x.jpg 1100w" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw"alt="Наш дизайнер продукта" width="270" height="260">
-                    
+                    <!-- /<img srcset="./images/card_i_450.jpg" alt="Наш дизайнер продукта" width="270" height="260"> -->
+                    <picture>
+                        <source srcset="
+                            ./images/card_i_270.jpg 1x,
+                            ./images/card_i_270@2x.jpg 2x,
+                            ./images/card_i_270@3x.jpg 3x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="
+                            ./images/card_i_354.jpg 1x,
+                            ./images/card_i_354@2x.jpg 2x,
+                            ./images/card_i_354@3x.jpg 3x"
+                            media="(min-width: 768px)" />
+                        <source srcset="
+                            ./images/card_i_450.jpg 1x,
+                            ./images/card_i_450@2x.jpg 2x,
+                            ./images/card_i_450@3x.jpg 3x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/card_i_450.jpg" alt="Наш дизайнер продукта" />
+                    </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Игорь Демьяненко</h3>
                         <p class="teamCard__work">Product Designer</p>
@@ -177,7 +194,21 @@
                     
                 </li>
                 <li class="teamCard__item teamCard--indent">
-                    <img src="images/card2.jpg" alt="Наш разработчик" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                                                ./images/card_o_270.jpg 1x,
+                                                ./images/card_o_270@2x.jpg 2x,
+                                                ./images/card_o_270@3x.jpg 3x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                ./images/card_o_354.jpg 1x,
+                                                ./images/card_o_354@2x.jpg 2x,
+                                                ./images/card_o_354@3x.jpg 3x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                ./images/card_o_450.jpg 1x,
+                                                ./images/card_o_450@2x.jpg 2x,
+                                                ./images/card_o_450@3x.jpg 3x" media="(min-width: 480px)" />
+                        <img src="./images/card_o_450.jpg" alt="Наш дизайнер продукта" />
+                    </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Ольга Репина</h3>
                         <p class="teamCard__work">Frontend Developer</p>
@@ -206,7 +237,21 @@
                     </div>
                 </li>
                 <li class="teamCard__item teamCard--indent">
-                    <img src="images/card3.jpg" alt="Специалист по продажам" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                                                ./images/card_n_270.jpg 1x,
+                                                ./images/card_n_270@2x.jpg 2x,
+                                                ./images/card_n_270@3x.jpg 3x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                ./images/card_n_354.jpg 1x,
+                                                ./images/card_n_354@2x.jpg 2x,
+                                                ./images/card_n_354@3x.jpg 3x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                ./images/card_n_450.jpg 1x,
+                                                ./images/card_n_450@2x.jpg 2x,
+                                                ./images/card_n_450@3x.jpg 3x" media="(min-width: 480px)" />
+                        <img src="./images/card_n_450.jpg" alt="Наш дизайнер продукта" />
+                    </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Николай Тарасов</h3>
                         <p class="teamCard__work">Marketing</p>
@@ -235,7 +280,21 @@
                     </div>
                 </li>
                 <li class="teamCard__item teamCard--indent">
-                    <img src="images/card4.jpg" alt="Наш ЮА дизайнер" width="270" height="260">
+                    <picture>
+                        <source srcset="
+                                                ./images/card_m_270.jpg 1x,
+                                                ./images/card_m_270@2x.jpg 2x,
+                                                ./images/card_m_270@3x.jpg 3x" media="(min-width: 1200px)" />
+                        <source srcset="
+                                                ./images/card_m_354.jpg 1x,
+                                                ./images/card_m_354@2x.jpg 2x,
+                                                ./images/card_m_354@3x.jpg 3x" media="(min-width: 768px)" />
+                        <source srcset="
+                                                ./images/card_m_450.jpg 1x,
+                                                ./images/card_m_450@2x.jpg 2x,
+                                                ./images/card_m_450@3x.jpg 3x" media="(min-width: 320px)" />
+                        <img src="./images/card_m_450.jpg" alt="Наш дизайнер продукта" />
+                    </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Михаил Ермаков</h3>
                         <p class="teamCard__work">UI Designer</p>
@@ -267,7 +326,7 @@
                 </li>
             </ul>
             </div>
-        </section>-->
+        </section>
         <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
@@ -319,8 +378,8 @@
         </section>
 
    </main> 
-    <!-- <footer class="footer ">--><!--Подвал сайта, наши контакты-->
-        <!--<div class="container container__footer">
+<footer class="footer "><!--Подвал сайта, наши контакты-->
+        <div class="container container__footer">
             <div class="footer__adres">
                     <a href="" class="logo logo__footer">Web<span class="logo__white">Studio</span></a>
                     <address class="adress" id="adress-link">
@@ -371,7 +430,7 @@
             </form>
             
         </div>
-    </footer>-->
+    </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal__close" data-modal-close>

@@ -5,13 +5,19 @@
 }
 
 .container__footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__adres {
-  margin-right: 70px;
-  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
 }
 
 .adress {
@@ -40,10 +46,17 @@
 }
 
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__title {
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 20px;
@@ -51,6 +64,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: getColor("bgBasic");
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .connection {
@@ -59,8 +77,9 @@
 }
 
 .connection__input {
-  width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -73,6 +92,10 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @media screen and (min-width: 768px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .connection__btn {
