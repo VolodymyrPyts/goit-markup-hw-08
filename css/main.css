@@ -396,7 +396,6 @@ img {
 
 @media screen and (max-width: 767px) {
   .teamCard {
-    max-width: 450px;
     text-align: center;
   }
 }
@@ -1075,8 +1074,28 @@ img {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .filtr {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+}
+
 .filtr__section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtr__section {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtr__section {
+    margin-bottom: 50px;
+  }
 }
 
 .filtr__button {
@@ -1105,6 +1124,12 @@ img {
 
 .filtr__item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filtr__item {
+    margin-bottom: 15px;
+  }
 }
 
 .filtr__item:last-child {
