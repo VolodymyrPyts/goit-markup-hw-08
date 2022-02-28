@@ -35,20 +35,16 @@
  
   }
 
-  &:last-child {
-    margin-right: 0;
-  }
+  
   @media screen and (min-width: 768px) {
-    // display: flex;
-    // flex-wrap: wrap;
+   
     
   flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 .ourWork__box {
-  // display: flex;
-  // height: 120px;
+  
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
