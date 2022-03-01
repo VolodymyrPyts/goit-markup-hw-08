@@ -3,30 +3,48 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 // -------------------  navigation -------------------------------------------------------------
 .navigation {
-  display: flex;
   position: relative;
-  align-items: stretch;
-  font-size: 16px;
+
+  font-size: 40px;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: getColor("secondaryText");
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .navigation__item {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   display: block;
-  margin-right: 50px;
-
   &:last-child {
-    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -45,22 +63,21 @@
 
 .navigation__link--active {
   color: getColor("active");
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: getColor("active");
+  @media screen and (min-width: 768px) {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: getColor("active");
+    }
   }
 }
 // -------------------  contact -------------------------------------------------------------
 .contact {
-  display: flex;
-  align-items: baseline;
   margin-left: auto;
   font-size: 16 px;
   font-weight: 500;
@@ -69,6 +86,11 @@
   color: getColor("firstText");
   transition: color getAnime("anime") getCube("Cube"),
     fill getAnime("anime") getCube("Cube");
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .contact__item {
@@ -91,4 +113,49 @@
   margin-right: 10px;
   align-items: stretch;
   fill: currentColor;
+}
+// ------------------------------mobMenuy----------------------------------
+.mobMenuy {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  align-items: flex-end;
+  justify-content: end;
+  background-color: getColor("bgBasic");
+}
+
+.mobMenuy__soc {
+  margin-top: 64px;
+}
+
+.mobMenuy__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobMemuy__item {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:not(:first-child) {
+    // margin-left: 20px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobMenuy_link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+  color: getColor("active");
+  text-decoration: none;
+}
+
+.header__contscts {
+  justify-content: end;
 }
