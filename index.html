@@ -18,8 +18,19 @@
     <header class="header">
          <!--Шапка сайту-->
      <div class="container header__container">
+         
         <a href="./index.html" class="logo logo__header"> Web<span class="logo__black">Studio</span></a>
-       <div class="mobMenuy">
+    <!-- <div class="headerMob"> -->
+        <svg class="mobInput " width="40" height="40">
+        <use href="images/icons.svg#icon-menu_40px">
+        </use>
+    </svg>
+    <svg class="mobInput mobInput--close" width="40" height="40">
+        <use href="images/icons.svg#icon-close_40px">
+        </use>
+    </svg>
+    <!-- </div> -->
+        <div class="mobMenuy">
         <nav >
         <ul class="navigation"><!--Навігація сайту-->
             <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active"> Студия </a></li>
@@ -28,11 +39,11 @@
         </ul>
 
     </nav>
-         <div class="header__contscts">
+         <div class="header__contacts">
         <ul class="contact"> <!--Наші контакти-->
            <li class="contact__item item__header">
                 
-        <a href="mailto:info@devstudio.com" class="navigation__link  ">
+        <a href="mailto:info@devstudio.com" class="navigation__link navigation__link--sizy ">
             <svg class="contact__link" width="16" height="12">
              <use href="images/icons.svg#icon-envelope">
              </use>
