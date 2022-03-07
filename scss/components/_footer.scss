@@ -103,6 +103,10 @@
   }
   position: relative;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+    text-align: start;
+  }
 }
 
 .connection__input {

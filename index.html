@@ -20,20 +20,23 @@
      <div class="container header__container">
          
         <a href="./index.html" class="logo logo__header"> Web<span class="logo__black">Studio</span></a>
-    <!-- <div class="headerMob"> -->
-        <svg class="mobInput " width="40" height="40">
-        <use href="images/icons.svg#icon-menu_40px">
-        </use>
-    </svg>
-    <svg class="mobInput mobInput--close" width="40" height="40">
-        <use href="images/icons.svg#icon-close_40px">
-        </use>
-    </svg>
-    <!-- </div> -->
-        <div class="mobMenuy">
+    <div class="headerMob">
+       <button tapy="button" class="menu-buttom" data-menu-button >
+        <svg width="40" height="40" 
+        aria-label="переключатель мобильного меню"
+        aria-expanded="false"
+        ><!--class="mobInput "-->
+            <use href="images/icons.svg#icon-menu_40px" class="icon-menu" ></use>
+            <use href="images/icons.svg#icon-close_40px" class="icon-close" ></use>
+        </svg>
+       </button>
+       
+      
+    </div>
+        <div class="mobMenuy" data-menu>
         <nav >
-        <ul class="navigation"><!--Навігація сайту-->
-            <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active"> Студия </a></li>
+     <ul class="navigation"><!--Навігація сайту-->
+            <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active"> Студия </a></li> 
             <li class="navigation__item"><a href="./portfolio.html" class="navigation__link ">Портфолио</a></li>
             <li class="navigation__item"><a href="#adress-link" class="navigation__link ">Контакты</a></li>
         </ul>
@@ -69,8 +72,8 @@
                 <li class="mobMemuy__item"><a href="#" class="mobMenuy_link">LinkedIn</a></li>
             </ul>
         </div>
-        </div>
-        </div>
+        </div> 
+        </div> 
         </div>
     </header>
 
@@ -515,5 +518,6 @@
 </div>
 </div> 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

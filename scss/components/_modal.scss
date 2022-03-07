@@ -31,18 +31,14 @@
   transition: transform getAnime("anime") getCube("Cube");
   background-color: getColor("bgBasic");
 
-  
-
   @media screen and (min-width: 480px) {
-    
- width: 450px;
-}
+    width: 450px;
+  }
 
-
-@media screen and (min-width: 1200px) {
-  min-height: 581px;
-  width: 528px;
- }
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 .modal__close {
   position: absolute;
@@ -76,7 +72,6 @@
   margin-bottom: 12px;
 
   @media screen and (min-width: 1200px) {
-    
     line-height: 1.15;
   }
 }
@@ -130,7 +125,6 @@
   color: getColor("firstText");
 
   @media screen and (min-width: 1200px) {
-    
     font-size: 14px;
     line-height: 1.71;
   }
