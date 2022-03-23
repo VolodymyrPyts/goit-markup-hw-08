@@ -18,75 +18,73 @@
     <header class="header">
          <!--Шапка сайту-->
      <div class="container header__container">
-         
         <a href="./index.html" class="logo logo__header"> Web<span class="logo__black">Studio</span></a>
-    <div class="headerMob">
-       <button tapy="button" class="menu-buttom" data-menu-button >
-        <svg width="40" height="40" 
-        aria-label="переключатель мобильного меню"
-        aria-expanded="false"
-        ><!--class="mobInput "-->
-            <use href="images/icons.svg#icon-menu_40px" class="icon-menu" ></use>
-            <use href="images/icons.svg#icon-close_40px" class="icon-close" ></use>
+      <div class="btn__header js-open-menu">
+        <svg class="icon-btn "  width="40" height="40" aria-label="переключатель мобильного меню" aria-expanded="false" role="img">
+            <use href="./images/icons.svg#icon-menu_40px" class="icon-menu "></use>
+            
         </svg>
-       </button>
-       
+      </div>
       
-    </div>
-        <div class="mobMenuy" data-menu>
+        <div class="mobMenu js-menu-container" > 
+        <div class="js-close-menu">
+            <svg class="icon-btn" width="40" height="40" aria-label="переключатель мобильного меню" aria-expanded="true" role="img">
+                
+                <use href="./images/icons.svg#icon-close_40px" class="icon-close "></use>
+            </svg>
+        </div>
         <nav >
-     <ul class="navigation"><!--Навігація сайту-->
-            <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active"> Студия </a></li> 
+        <ul class="navigation"><!--Навігація сайту-->
+            <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--active"> Студия </a></li>
             <li class="navigation__item"><a href="./portfolio.html" class="navigation__link ">Портфолио</a></li>
             <li class="navigation__item"><a href="#adress-link" class="navigation__link ">Контакты</a></li>
         </ul>
 
     </nav>
-         <div class="header__contacts">
+     <div class="mobContact">    
         <ul class="contact"> <!--Наші контакти-->
-           <li class="contact__item item__header">
+             <li class="contact__item item__header">
                 
-        <a href="mailto:info@devstudio.com" class="navigation__link navigation__link--sizy ">
-            <svg class="contact__link" width="16" height="12">
-             <use href="images/icons.svg#icon-envelope">
-             </use>
+        <a href="mailto:info@devstudio.com" class="navigation__link  ">
+            <svg class="contact__link contact__link--mob" width="16" height="12">
+             <use href="images/icons.svg#icon-envelope"></use>
+               
+             
             </svg>
         info@devstudio.com</a>
              </li>
-            <li class="contact__item item__header">
+            <li class="contact__item item__header contact__item--size">
                 <a href="tel:+380961111111" class="navigation__link">
                    
-                <svg class="contact__link" width="10" height="16">
-                    <use href="images/icons.svg#icon-smartphone">
+                <svg class="contact__link  contact__link--mob " width="10" height="16">
+                    <use href="images/icons.svg#icon-smartphone" >
                     </use>
                 </svg>
                 +38 096 111 11 11
                 </a>
             </li>
         </ul>
-        <div class="mobMenuy__soc">
-            <ul class="mobMenuy__list">
-                <li class="mobMemuy__item"><a href="#" class="mobMenuy_link">Instagram</a></li>
-                <li class="mobMemuy__item"><a href="#" class="mobMenuy_link">Twitter</a></li>
-                <li class="mobMemuy__item"><a href="#" class="mobMenuy_link">Facebook</a></li>
-                <li class="mobMemuy__item"><a href="#" class="mobMenuy_link">LinkedIn</a></li>
-            </ul>
+        <ul class="socialList">
+            <li class="socialList__item"><a href="#" class="socialList_link">Instagram</a></li>
+            <li class="socialList__item"><a href="#" class="socialList_link">Twitter</a></li>
+            <li class="socialList__item"><a href="#" class="socialList_link">Facebook</a></li>
+            <li class="socialList__item"><a href="#" class="socialList_link">LinkedIn</a></li>
+        </ul>
+        
         </div>
-        </div> 
-        </div> 
         </div>
-    </header>
 
-    <main class="main">
-        <!--Тело сайту-->
-        <section class="hero" > <!--Постер нашей кампании-->
-         <div class="container">
+    </div>
+    </header>
+<main>
+        <section class="hero" > <!-- Постер нашей кампании -->
+          <div class="container">
             <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
             <button type="button" class="hero__button  " data-modal-open> Заказать услугу </button>
             </div>
         </section>
-         <section class="section"> <!--Наши преимущества-->
-        <div class="container">
+         <section class="section"> <!--Наши преимущества -->
+         <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="ourWork">
                 <li class="ourWork__list">
@@ -140,24 +138,24 @@
             </ul>
             </div>
         </section>
-      <section class="section section__paddingTopNon"><!--Чем мы занимаемся-->
-        <div class="container ">
+         <section class="section section__paddingTopNon"> <!--Чем мы занимаемся -->
+         <div class="container ">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="topic">
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img srcset="./images/desktop.jpg 370w, ./images/desktop@2x.jpg 740w, ./images/desktop@3x.jpg 1100w"  src="./images/desktop.jpg" alt="Десктопные приложения" width="370" height="294" ></a>  <!---->
+                    <a href="" class="topic__link"><img srcset="./images/desktop.jpg 370w, ./images/desktop@2x.jpg 740w, ./images/desktop@3x.jpg 1100w"  sizes="370px" src="./images/desktop.jpg" alt="Десктопные приложения" width="370" height="294" ></a>
                     <div class="topic__card">
                         <p>Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img srcset="./images/moby.jpg 370w, ./images/moby@2x.jpg 740w, ./images/moby@3x.jpg 1100w" src="./images/moby.jpg" alt="Мобильные приложения" width="370" height="294"> </a> <!---->
+                    <a href="" class="topic__link"><img srcset="./images/moby.jpg 370w, ./images/moby@2x.jpg 740w, ./images/moby@3x.jpg 1100w" sizes="370px" src="./images/moby.jpg" alt="Десктопные приложения" width="370" height="294" ></a>
                     <div class="topic__card">
                         <p>Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="topic__list">
-                    <a href="" class="topic__link"><img  srcset="./images/desigen.jpg 370w, ./images/desigen@2x.jpg 740w, ./images/desigen@3x.jpg 1100w" src="./images/desigen.jpg" alt="Дизайнерские решения" width="370" height="294"></a>
+                    <a href="" class="topic__link"><img srcset="./images/desigen.jpg 370w, ./images/desigen@2x.jpg 740w, ./images/desigen@3x.jpg 1100w" sizes="370px" src="./images/desigen.jpg" alt="Десктопные приложения" width="370" height="294" ></a>
                     <div class="topic__card">
                         <p>Дизайнерские решения</p>
                     </div>
@@ -165,30 +163,27 @@
             </ul>
             </div>
         </section>
-        <section class="section section__teamBg"><!--Наша команда-->
-      <div class="container">
+        <section class="section section__teamBg"> <!-- Наша команда -->
+        <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="teamCard">
                 <li  class="teamCard__item teamCard--indent">
-                   
                     <picture>
                         <source srcset="
-                            ./images/card_i_270.jpg 1x,
-                            ./images/card_i_270@2x.jpg 2x,
-                            ./images/card_i_270@3x.jpg 3x"
-                            media="(min-width: 1200px)" class="teamCard__img"/>
+                                                ./images/card_i_270.jpg 1x,
+                                                ./images/card_i_270@2x.jpg 2x,
+                                                ./images/card_i_270@3x.jpg 3x" media="(min-width: 1200px)" class="teamCard__image" />
                         <source srcset="
-                            ./images/card_i_354.jpg 1x,
-                            ./images/card_i_354@2x.jpg 2x,
-                            ./images/card_i_354@3x.jpg 3x"
-                            media="(min-width: 768px)" class="teamCard__img"/>
+                                                ./images/card_i_354.jpg 1x,
+                                                ./images/card_i_354@2x.jpg 2x,
+                                                ./images/card_i_354@3x.jpg 3x" media="(min-width: 768px)" class="teamCard__image" />
                         <source srcset="
-                            ./images/card_i_450.jpg 1x,
-                            ./images/card_i_450@2x.jpg 2x,
-                            ./images/card_i_450@3x.jpg 3x"
-                            media="(min-width: 480px)"class="teamCard__img" />
-                        <img src="./images/card_i_450.jpg" alt="Наш дизайнер продукта" class="teamCard__img"/>
+                                                ./images/card_i_450.jpg 1x,
+                                                ./images/card_i_450@2x.jpg 2x,
+                                                ./images/card_i_450@3x.jpg 3x" media="(min-width: 480px)" class="teamCard__image" />
+                        <img src="./images/card_i_450.jpg" alt="Наш дизайнер продукта" class="teamCard__image" />
                     </picture>
+                    
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Игорь Демьяненко</h3>
                         <p class="teamCard__work">Product Designer</p>
@@ -222,18 +217,21 @@
                 <li class="teamCard__item teamCard--indent">
                     <picture>
                         <source srcset="
-                                                ./images/card_o_270.jpg 1x,
-                                                ./images/card_o_270@2x.jpg 2x,
-                                                ./images/card_o_270@3x.jpg 3x" media="(min-width: 1200px)" class="teamCard__img"/>
+                                                                    ./images/card_o_270.jpg 1x,
+                                                                    ./images/card_o_270@2x.jpg 2x,
+                                                                    ./images/card_o_270@3x.jpg 3x" media="(min-width: 1200px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_o_354.jpg 1x,
-                                                ./images/card_o_354@2x.jpg 2x,
-                                                ./images/card_o_354@3x.jpg 3x" media="(min-width: 768px)" class="teamCard__img"/>
+                                                                    ./images/card_o_354.jpg 1x,
+                                                                    ./images/card_o_354@2x.jpg 2x,
+                                                                    ./images/card_o_354@3x.jpg 3x" media="(min-width: 768px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_o_450.jpg 1x,
-                                                ./images/card_o_450@2x.jpg 2x,
-                                                ./images/card_o_450@3x.jpg 3x" media="(min-width: 480px)" class="teamCard__img"/>
-                        <img src="./images/card_o_450.jpg" alt="Наш дизайнер продукта" class="teamCard__img"/>
+                                                                    ./images/card_o_450.jpg 1x,
+                                                                    ./images/card_o_450@2x.jpg 2x,
+                                                                    ./images/card_o_450@3x.jpg 3x" media="(min-width: 480px)"
+                            class="teamCard__image" />
+                        <img src="./images/card_o_450.jpg" alt="Наш дизайнер продукта" class="teamCard__image" />
                     </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Ольга Репина</h3>
@@ -265,18 +263,21 @@
                 <li class="teamCard__item teamCard--indent">
                     <picture>
                         <source srcset="
-                                                ./images/card_n_270.jpg 1x,
-                                                ./images/card_n_270@2x.jpg 2x,
-                                                ./images/card_n_270@3x.jpg 3x" media="(min-width: 1200px)" class="teamCard__img"/>
+                                                                    ./images/card_n_270.jpg 1x,
+                                                                    ./images/card_n_270@2x.jpg 2x,
+                                                                    ./images/card_n_270@3x.jpg 3x" media="(min-width: 1200px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_n_354.jpg 1x,
-                                                ./images/card_n_354@2x.jpg 2x,
-                                                ./images/card_n_354@3x.jpg 3x" media="(min-width: 768px)" class="teamCard__img" />
+                                                                    ./images/card_n_354.jpg 1x,
+                                                                    ./images/card_n_354@2x.jpg 2x,
+                                                                    ./images/card_n_354@3x.jpg 3x" media="(min-width: 768px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_n_450.jpg 1x,
-                                                ./images/card_n_450@2x.jpg 2x,
-                                                ./images/card_n_450@3x.jpg 3x" media="(min-width: 480px)" class="teamCard__img"/>
-                        <img src="./images/card_n_450.jpg" alt="Наш дизайнер продукта" class="teamCard__img"/>
+                                                                    ./images/card_n_450.jpg 1x,
+                                                                    ./images/card_n_450@2x.jpg 2x,
+                                                                    ./images/card_n_450@3x.jpg 3x" media="(min-width: 480px)"
+                            class="teamCard__image" />
+                        <img src="./images/card_n_450.jpg" alt="Наш дизайнер продукта" class="teamCard__image" />
                     </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Николай Тарасов</h3>
@@ -308,18 +309,21 @@
                 <li class="teamCard__item teamCard--indent">
                     <picture>
                         <source srcset="
-                                                ./images/card_m_270.jpg 1x,
-                                                ./images/card_m_270@2x.jpg 2x,
-                                                ./images/card_m_270@3x.jpg 3x" media="(min-width: 1200px)" class="teamCard__img"/>
+                                                                    ./images/card_m_270.jpg 1x,
+                                                                    ./images/card_m_270@2x.jpg 2x,
+                                                                    ./images/card_m_270@3x.jpg 3x" media="(min-width: 1200px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_m_354.jpg 1x,
-                                                ./images/card_m_354@2x.jpg 2x,
-                                                ./images/card_m_354@3x.jpg 3x" media="(min-width: 768px)" class="teamCard__img"/>
+                                                                    ./images/card_m_354.jpg 1x,
+                                                                    ./images/card_m_354@2x.jpg 2x,
+                                                                    ./images/card_m_354@3x.jpg 3x" media="(min-width: 768px)"
+                            class="teamCard__image" />
                         <source srcset="
-                                                ./images/card_m_450.jpg 1x,
-                                                ./images/card_m_450@2x.jpg 2x,
-                                                ./images/card_m_450@3x.jpg 3x" media="(min-width: 320px)" class="teamCard__img"/>
-                        <img src="./images/card_m_450.jpg" alt="Наш дизайнер продукта" class="teamCard__img"/>
+                                                                    ./images/card_m_450.jpg 1x,
+                                                                    ./images/card_m_450@2x.jpg 2x,
+                                                                    ./images/card_m_450@3x.jpg 3x" media="(min-width: 480px)"
+                            class="teamCard__image" />
+                        <img src="./images/card_m_450.jpg" alt="Наш дизайнер продукта" class="teamCard__image" />
                     </picture>
                     <div class="teamCard__block">
                         <h3 class="teamCard__name">Михаил Ермаков</h3>
@@ -403,49 +407,54 @@
             </div>
         </section>
 
-   </main> 
-<footer class="footer "><!--Подвал сайта, наши контакты-->
-    
-       <div class="container container__footer">
-<div class="tabl">
-            <div class="footer__adres">
+    </main> 
+     <footer class="footer "> <!--Подвал сайта, наши контакты -->
+        <div class="container container__footer">
+           <div class="footer__modal">
+                <div class="footer__adres">
                     <a href="" class="logo logo__footer">Web<span class="logo__white">Studio</span></a>
                     <address class="adress" id="adress-link">
-                    
-                        <ul >
+                
+                        <ul>
                             <li class="adress__item"><a href="https://goo.gl/maps/BZQKdsraXfpykEwU6" class=" adress__link"
                                     target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
-                            <li class="adress__item"><a href="mailto:info@devstudio.com" class="adress__link adress__link--transparent">info@devstudio.com</a></li>
-                            <li class="adress__item"><a href="tel:+380961111111" class="adress__link adress__link--transparent">+38 096 111 11 11</a></li>
+                            <li class="adress__item"><a href="mailto:info@devstudio.com"
+                                    class="adress__link adress__link--transparent">info@devstudio.com</a></li>
+                            <li class="adress__item"><a href="tel:+380961111111" class="adress__link adress__link--transparent">+38 096
+                                    111 11 11</a></li>
                         </ul>
                     </address>
-            </div>
-            <div class="social footer-social">
-                <h2 class="footer__title">присоединяйтесь</h2>
-                <ul class="socialNetworks">
-                    <li class="socialNetworks__item">
-                        <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon " width="20" height="20">
-                                <use href=" images/icons.svg#icon-instagram"></use>
-                            </svg></a>
-                    </li>
-                    <li class="socialNetworks__item">
-                        <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon " width="20" height="20">
-                                <use href=" images/icons.svg#icon-twitter"></use>
-                            </svg></a>
-                    </li>
-                    <li class="socialNetworks__item">
-                        <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon " width="20" height="20">
-                                <use href=" images/icons.svg#icon-facebook"></use>
-                            </svg></a>
-                    </li>
-                    <li class="socialNetworks__item">
-                        <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon " width="20" height="20">
-                                <use href=" images/icons.svg#icon-linkedin"></use>
-                            </svg></a>
-                    </li>
-                </ul>
-            </div>
-            </div>
+                </div>
+                <div class="social footer-social">
+                    <h2 class="footer__title">присоединяйтесь</h2>
+                    <ul class="socialNetworks">
+                        <li class="socialNetworks__item">
+                            <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
+                                    width="20" height="20">
+                                    <use href=" images/icons.svg#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+                        <li class="socialNetworks__item">
+                            <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
+                                    width="20" height="20">
+                                    <use href=" images/icons.svg#icon-twitter"></use>
+                                </svg></a>
+                        </li>
+                        <li class="socialNetworks__item">
+                            <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
+                                    width="20" height="20">
+                                    <use href=" images/icons.svg#icon-facebook"></use>
+                                </svg></a>
+                        </li>
+                        <li class="socialNetworks__item">
+                            <a href="#" class="socialNetworks__link socialNetworks--footer"><svg class="socialNetworks__icon "
+                                    width="20" height="20">
+                                    <use href=" images/icons.svg#icon-linkedin"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+           </div>
             <form>
                 <div class="connection">
                 <h2 class="footer__title">Подпишитесь на рассылку</h2>
@@ -516,8 +525,11 @@
     </div>
     </form>
 </div>
-</div> 
+</div>
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script> -->
 </body>
 </html>
