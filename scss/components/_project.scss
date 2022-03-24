@@ -8,10 +8,12 @@
 
 .project__card {
   background-color: getColor("bgBasic");
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-  // margin-bottom: 30px;
-  margin: 15px;
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
     // margin-right: 30px;
 

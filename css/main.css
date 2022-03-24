@@ -167,7 +167,12 @@ img {
 }
 
 .navigation__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   color: currentColor;
   text-decoration: none;
@@ -234,6 +239,9 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 12px;
   }
   .contact:first-child {
@@ -1374,7 +1382,19 @@ img {
 }
 
 .filtr__section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtr__section {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtr__section {
+    margin-bottom: 50px;
+  }
 }
 
 .filtr__button {
@@ -1431,11 +1451,15 @@ img {
 
 .project__card {
   background-color: #ffffff;
-  margin: 15px;
+}
+
+.project__card:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .project__card {
+    margin: 15px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
   }
