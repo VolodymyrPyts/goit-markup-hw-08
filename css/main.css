@@ -379,6 +379,10 @@ img {
   }
 }
 
+.btn__header {
+  position: relative;
+}
+
 .btn__header .icon-close {
   display: none;
 }
@@ -438,8 +442,8 @@ img {
 
 .icon-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: -35px;
+  right: 0;
 }
 
 .icon-btn:hover, .icon-btn:focus {
@@ -454,8 +458,8 @@ img {
 
 .js-close-menu {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 15px;
 }
 
 .hero {
@@ -850,6 +854,7 @@ img {
   font-size: 24px;
   line-height: 1.167;
   text-decoration: none;
+  position: relative;
   color: #2196f3;
 }
 

@@ -5,6 +5,7 @@
   font-size: 24px;
   line-height: 1.167;
   text-decoration: none;
+  position: relative;
 
   color: getColor("active");
   @media screen and (min-width: 1200px) {
