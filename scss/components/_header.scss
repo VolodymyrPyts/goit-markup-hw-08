@@ -22,6 +22,7 @@
   letter-spacing: 0.02em;
   color: getColor("secondaryText");
   position: relative;
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: stretch;
@@ -219,9 +220,8 @@
     align-items: center;
   }
 }
-.btn__header {
-  position: relative;
-}
+// .btn__header {
+// }
 .btn__header .icon-close {
   display: none;
 }
@@ -277,8 +277,8 @@
 .icon-btn {
   position: absolute;
 
-  top: -35px;
-  right: 0;
+  top: 10px;
+  right: 15px;
   &:hover,
   &:focus {
     fill: getColor("active");
@@ -289,6 +289,7 @@
 }
 .js-close-menu {
   position: absolute;
-  top: 5px;
+  // z-index: 60;
+  top: 0;
   right: 15px;
 }

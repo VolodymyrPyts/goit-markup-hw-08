@@ -379,10 +379,6 @@ img {
   }
 }
 
-.btn__header {
-  position: relative;
-}
-
 .btn__header .icon-close {
   display: none;
 }
@@ -442,8 +438,8 @@ img {
 
 .icon-btn {
   position: absolute;
-  top: -35px;
-  right: 0;
+  top: 10px;
+  right: 15px;
 }
 
 .icon-btn:hover, .icon-btn:focus {
@@ -458,7 +454,7 @@ img {
 
 .js-close-menu {
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 15px;
 }
 
