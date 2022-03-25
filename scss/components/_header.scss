@@ -1,5 +1,4 @@
 .header {
-  // position: relative;
   border-bottom: 1px solid getColor("border");
   @media screen and (max-width: 767px) {
     padding-top: 16px;
@@ -11,7 +10,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    
+    position: relative;
   }
 }
 
@@ -22,10 +21,9 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: getColor("secondaryText");
-
+  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
-    position: relative;
     align-items: stretch;
     font-size: 14px;
     line-height: 1.14;
@@ -35,12 +33,11 @@
 }
 
 .navigation__item {
-  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
   margin-right: 50px;
-
+  position: relative;
   &:last-child {
     margin-right: 0;
   }
@@ -130,7 +127,6 @@
 }
 
 .contact__item {
-  // margin-bottom: 0;
   @media screen and (max-width: 767px) {
     &:last-child {
       margin-bottom: 32px;
@@ -146,7 +142,7 @@
 
   @media screen and (min-width: 1200px) {
     display: block;
-    position: relative;
+
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 50px;
@@ -280,7 +276,7 @@
   position: absolute;
 
   top: 10px;
-  right: 20px;
+  right: 15px;
   &:hover,
   &:focus {
     fill: getColor("active");
@@ -292,5 +288,5 @@
 .js-close-menu {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
 }
